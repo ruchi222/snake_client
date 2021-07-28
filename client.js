@@ -10,6 +10,10 @@ const connect = function () {
     conn.setEncoding("utf8");
     conn.on("connect", () => {
         conn.write("Name: Ruchi")
+        conn.write("Move: up")
+        conn.write("Move: down")
+        conn.write("Move: left")
+        conn.write("Move: right")
       // code that does something when the connection is first established
       console.log("Connected!")
     });
